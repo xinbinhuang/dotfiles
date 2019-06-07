@@ -1,5 +1,3 @@
-#! /usr/bin/env bash
-
 # append to the .bashrc or .profile for autolaunching ssh-agent for Windows 10 WSL
 env=~/.ssh/agent.env
 
