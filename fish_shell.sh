@@ -12,3 +12,6 @@ chsh -s ${FISH_PATH}
 # Download oh my fish
 curl -L https://get.oh-my.fish | fish
 omf install bobthefish
+
+# Move config file
+cp ./config.fish ~/.config/fish/config.fish
