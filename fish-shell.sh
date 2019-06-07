@@ -8,3 +8,7 @@ sudo apt-get install fish
 FISH_PATH=$(which fish)
 echo ${FISH_PATH} | sudo tee -a /etc/shells
 chsh -s ${FISH_PATH}
+
+# Download oh my fish
+curl -L https://get.oh-my.fish | fish
+omf install bobthefish
