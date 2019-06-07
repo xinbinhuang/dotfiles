@@ -3,3 +3,8 @@
 sudo apt-add-repository ppa:fish-shell/release-3
 sudo apt-get update
 sudo apt-get install fish
+
+# Set Fish as default shell 
+FISH_PATH=$(which fish)
+echo ${FISH_PATH} | sudo tee -a /etc/shells
+chsh -s ${FISH_PATH}
