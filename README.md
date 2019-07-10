@@ -6,6 +6,9 @@ Repo to host random bootstrap files
 Repo: https://github.com/powerline/fonts  
 Guideline: https://medium.com/@slmeng/how-to-install-powerline-fonts-in-windows-b2eedecace58
 
+## Airflow on WSL
+
+[Point AIRFLOW_HOME to Windows system](https://www.astronomer.io/guides/airflow-wsl/)
 
 TODO
 
