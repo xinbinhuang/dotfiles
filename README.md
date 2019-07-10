@@ -10,7 +10,7 @@ Guideline: https://medium.com/@slmeng/how-to-install-powerline-fonts-in-windows-
 
 [Point AIRFLOW_HOME to Windows system](https://www.astronomer.io/guides/airflow-wsl/)
 
-TODO
+## TODO
 
 `setup.sh`?
 - A one shot script to set up everything
