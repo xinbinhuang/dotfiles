@@ -7,7 +7,7 @@ echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] http://packages.cloud
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
 
 # Update the package list and install the Cloud SDK
-sudo apt-get update && sudo apt-get install google-cloud-sdk -yyy
+sudo apt update && sudo apt install google-cloud-sdk -yyy
 
 EXIT_CODE=$?
 if [ $EXIT_CODE -eq 0 ]

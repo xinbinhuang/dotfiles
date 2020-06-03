@@ -1,9 +1,9 @@
 #! /usr/bin/bash
 
-sudo apt-get update
+sudo apt update
 
 # Install packages to allow apt to use a repository over HTTPS:
-sudo apt-get install \
+sudo apt install \
     apt-transport-https \
     ca-certificates \
     curl \
@@ -22,7 +22,7 @@ sudo add-apt-repository \
    $(lsb_release -cs) \
    stable"
 
-sudo apt-get update && sudo apt-get install docker-ce docker-ce-cli containerd.io -yyy
+sudo apt update && sudo apt install docker-ce docker-ce-cli containerd.io -yyy
 
 echo "Add user: $USER to the docker group..."
 sudo usermod -aG docker $USER
