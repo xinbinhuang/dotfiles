@@ -1,5 +1,7 @@
 #! /usr/bin/bash
 
+sudo -v
+
 apps=(
     git
     coreutils
@@ -12,7 +14,6 @@ apps=(
     htop
     glances
     postgresql-client
-    zsh
 )
 
-sudo apt update -yyy && sudo apt install -yyy ${apps[@]}
+apt update -yyy && apt install -yyy ${apps[@]}
