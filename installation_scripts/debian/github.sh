@@ -1,16 +1,16 @@
 #! /usr/bin/bash
 
-echo "Generating SSh key..."
+default_file="$HOME/.ssh/id_rsa.pub"
 
-mkdir -p ~/.ssh
-
-ssh-keygen -t rsa -b 4096 -C github-$(whoami)@$(hostname)
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_rsa
+if [ ! -f "$default_file" ]; then
+    echo "Generating SSh key..."
+    mkdir -p ~/.ssh
+    ssh-keygen -t rsa -b 4096 -C github-$(whoami)@$(hostname)
+fi
 
 echo "Copying the public key to Github: https://github.com/settings/keys"
 echo "====================================================================\n"
-cat ~/.ssh/id_rsa.pub
+cat "$default_file"
 
 echo "\n"
 echo "Configure Github login..."
